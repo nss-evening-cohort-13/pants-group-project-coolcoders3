@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill the Jeans | Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navCustom">
+      <a class="navbar-brand logo textCustom" href="index.html"
+        >Spill The Jeans</a
+      >
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link textCustom textActive" href="shop.html"
+              >Shop <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textCustom" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link textCustom" href="checkout.html">Checkout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 text-center">Shop</h1>
+        </div>
+      </div>
+      <div id="filterDropdowns" class="d-flex justify-content-center mb-5">
+        <div class="dropdown" id="filterDropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle text-uppercase btn-danger"
+            type="button"
+            id="dropdownMenu2"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Filter By
+          </button>
+        </div>
+      </div>
+      <div id="filterOptions">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-sm text-uppercase">
+              Style
+              <div id="styleFilters" class="text-capitalize">
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="Skinny" />
+                  <label class="form-check-label" for="Skinny">Skinny</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="Distressed"
+                  />
+                  <label class="form-check-label" for="Distressed"
+                    >Distressed</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="Flare" />
+                  <label class="form-check-label" for="Flare">Flare</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm text-uppercase border-left">
+              Rise
+              <div id="styleFilters" class="text-capitalize">
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="LowRise"
+                  />
+                  <label class="form-check-label" for="LowRise">Low Rise</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="MidRise"
+                  />
+                  <label class="form-check-label" for="MidRise">Mid Rise</label>
+                </div>
+                <div class="form-check">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="HighRise"
+                  />
+                  <label class="form-check-label" for="HighRise"
+                    >High Rise</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-sm text-uppercase border-left">
+              Price
+              <div class="rangeSlider text-capitalize">
+                <input
+                  type="range"
+                  name="sliderValue"
+                  min="1"
+                  max="200"
+                  value="200"
+                  class="priceSlider"
+                  id="sliderRange"
+                />
+                <div id="maxPrice"></div>
+              </div>
+            </div>
+          </div>
+          <div id="applyButton" class="d-flex justify-content-center">
+            <button
+              class="btn btn-outline-secondary text-uppercase customBtn whiteText"
+              type="button"
+            >
+              Apply
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="productContainerShop"
+        class="d-flex flex-wrap justify-content-around"
+      ></div>
+    </main>
+
+    <nav class="footer">
+      <a class="navbar-brand logo textCustom" href="index.html"
+        >Spill The Jeans</a
+      >
+      <div class="footerCopyright">
+        <p>
+          &copy; 2020 Cool Coders Group III, LLC (Autumn, Kaitlyn, Sam, &
+          Wendell) | Privacy Policy | Do Not Sell My Info | A Evening Cohort
+          Lucky Number 13 Group Project | Your Tennessee Privacy Rights | Terms
+          of Use
+        </p>
+      </div>
+    </nav>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
+
+

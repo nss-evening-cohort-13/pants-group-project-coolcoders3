@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.customModal {
+  font-family: "Source Sans Pro", sans-serif;
+  background-color: #fceade;
+  text-transform: capitalize;
+}
+
+.navCustom {
+  background-color: #fceade;
+}
+
+.textCustom {
+  color: black;
+}
+
+.whiteText {
+  color: white;
+}
+
+.textActive {
+  font-size: larger;
+}
+
+.textSmaller {
+  font-size: 13px;
+}
+
+h1 {
+  font-family: "Lora", serif;
+}
+
+.logo {
+  font-family: "Lora", serif;
+}
+
+.jumbotron {
+  background-color: #25ced1;
+  color: white;
+}
+
+.customBtn {
+  background-color: #25ced1;
+  color: white;
+}
+
+.footer {
+  background-color: #ff8a5b;
+  bottom: 0;
+}
+
+#jeanCollage {
+  line-height: 0;
+  -webkit-column-count: 5px;
+  -webkit-column-gap: 0;
+  -moz-column-count: 5;
+  -moz-column-gap: 0px;
+  column-count: 5;
+  column-gap: 0px;
+}
+
+#filterOptions {
+  display: none;
+}
+
+/* SLIDER */
+
+input[type="range"] {
+  height: 25px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 50%;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 50%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #25ced1;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #25ced1;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #25ced1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #25ced1;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 50%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #25ced1;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #25ced1;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #25ced1;
+  cursor: pointer;
+}
+
+input[type="range"]::-ms-track {
+  width: 50%;
+  height: 5px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-ms-fill-lower {
+  background: #25ced1;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type="range"]::-ms-fill-upper {
+  background: #25ced1;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 1px solid #25ced1;
+  height: 18px;
+  width: 18px;
+  border-radius: 25px;
+  background: #25ced1;
+  cursor: pointer;
+}
+
+input[type="range"]:focus::-ms-fill-lower {
+  background: #25ced1;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #25ced1;
+}
+/* COUPON */
+#popUpCouponCard {
+  text-align: center;
+}
+
+#modalHeader {
+  text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+#emailForm {
+  text-align: center;
+}
+/*-----checkout page------ */
+
+.show-cart li {
+  display: flex;
+}
+
+.display-4 {
+  text-align: center;
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spill The Jeans</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="main.css" rel="stylesheet" />
+  </head>
+  <body>
+
+     <nav class="navbar navbar-expand-lg navCustom">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link textCustom" href="shop.html"
+              >Shop<span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link textCustom" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link textCustom" href="Checkout.html">Checkout</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+<!-- Modal -->
+<div id="popupCouponCard">
+  <div class="modal fade" id="couponModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content customModal">
+          <div id="modalHeader">
+            <h5 class="modal-title logo" id="exampleModalLabel">Spill The Jeans</h5>
+          </div>
+          <div class="modal-body">
+            <h6>Get $10 Off Your First Purchase!!!</h6>
+          </div>
+          <form id="emailForm">
+            <div class="form-group mx-sm-3 mb-2">
+              <label for="inputEmail" class="sr-only">Email Address</label>
+              <input type="email" class="form-control" id="inputEmailAddress" placeholder="Email Address">
+              <br>
+              <button type="button" class="btn customBtn mb-2" id="discount">I want my $10</button>
+            </div>
+            <div> 
+              <p id="closeModalLink"  data-dismiss="modal" class="textSmaller">I don't want $10</p>
+            <!--  <button type="button" class="btn btn-secondary" data-dismiss="modal">I don't want $10</button> -->
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+
+    <div id="jeanCollage"></div>
+
+
+    
+
+    <nav class="footer">
+      <a class="navbar-brand logo textCustom" href="index.html">Spill The Jeans</a>
+        <div class="footerCopyright">
+        <p>&copy; 2020 Cool Coders Group III, LLC (Autumn, Kaitlyn, Sam, & Wendell) | Privacy Policy | Do Not Sell My Info | A Evening Cohort Lucky Number 13 Group Project | Your Tennessee Privacy Rights | Terms of Use</p>
+        </div>
+    </nav>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
